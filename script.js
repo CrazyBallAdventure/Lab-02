@@ -114,3 +114,41 @@ function submitNumber7() {
   }
 }
 
+// Lab 04
+
+let correctAnswerYN1 = "yes";
+
+function submitYN1() {
+  let userAns = document.getElementById("YN1").value;
+  if (userAns == correctAnswerYN1) {
+    alert(`correct.`);
+  }
+  else if (userAns == "no") {
+    alert("nope");
+  } 
+  }
+  
+
+let correctAnswerYN2 = "yes";
+
+function submitYN2() {
+  let userAns = document.getElementById("YN2").value;
+  if (userAns == correctAnswerYN1) {
+    alert(`correct.`);
+  }
+  else if (userAns == "no") {
+    alert("nope");
+  } 
+  }
+
+  let correctAnswerYN3 = "no";
+
+function submitYN3() {
+  let userAnsYN3 = document.getElementById("YN3").value;
+  if (userAnsYN3 == correctAnswerYN3) {
+    alert(`correct.`);
+  }
+  else if (userAnsYN3 == "yes") {
+    alert("no");
+  } 
+  }
