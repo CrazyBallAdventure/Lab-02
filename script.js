@@ -22,3 +22,95 @@ function submitQuiz() {
 
     alert(`You got ${score} out of 5 questions correct!`);
   }
+
+  // Lab 03
+
+  // let correctAnswer = "12"
+
+// function submitNumber6() {
+//   const userAns = document.getElementById("Q6").value;
+//   if (userAns > correctAnswer) {
+//     alert(`Number is too high! Try again.`);
+//   }
+//   else if (userAns < correctAnswer) {
+//     alert(`Number is too low! Try again.`);
+//   }
+//   else {
+//     alert(`You guessed right!`);
+//   }
+// }
+
+// function sumbitNumber6() {
+//   const userAns = document.getElementById("Q6").value;
+//   if (userAns > correctAnswer) {
+//     alert(`Number is too high! Try again.`);
+//   }
+//   else if (userAns < correctAnswer) {
+//     alert(`Number is too low! Try again.`);
+//   }
+//   else {
+//     alert(`Nice! You got it!`);
+//   }
+// }
+
+let correctAnswer = 12;
+
+function submitNumber6() {
+  let userAns = document.getElementById("Q6").value;
+  if (userAns > correctAnswer) {
+    alert(`Nuh-uh, too high.`);
+  }
+  else if (userAns < correctAnswer) {
+    alert(`Nuh-uh, too low.`);
+  }
+  else if (userAns = correctAnswer)
+  alert(`Awesome, you go it!`)
+}
+
+
+// Below is for lab 3 Q7
+
+function checkUA(userinput, correctanwsers) {
+  let userWC = false;
+  let x = 0;
+  while (x < correctanwsers.length) {
+    if (correctanwsers[x] == userinput) {
+      userWC = true
+    }
+    x += 1
+  }
+  if (userWC == true) {
+    return true
+  }
+  if (userWC == false) {
+    return false
+  }
+
+}
+
+
+let userAns2 = "";
+let correctAnswer2 = ["green", "red", "violet", "yellow"];
+let retry = 5
+function submitNumber7() {
+
+  if (retry > 0) {
+
+
+    let userAns2 = document.getElementById("Q7").value;
+    let userWC = checkUA(userAns2, correctAnswer2)
+
+    if (userWC == true) {
+      alert("Congrats!")
+    }
+    if (userWC == false) {
+      alert("Wanna Try Again?")
+    }
+
+    retry -= 1
+  }
+  else {
+    alert(`Trials up!`)
+  }
+}
+
